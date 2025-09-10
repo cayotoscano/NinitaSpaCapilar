@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ninita Spa Capilar - Especialistas em Tratamentos Capilares</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="header-content">
+                <div class="header-logo">
+                    <h1>Ninita Spa Capilar</h1>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <nav class="desktop-nav">
+                    <button onclick="scrollToSection('inicio')" class="nav-link">Início</button>
+                    <button onclick="scrollToSection('especialista')" class="nav-link">Nossa Especialista</button>
+                    <button onclick="scrollToSection('porque-spa')" class="nav-link">Por que Spa Capilar</button>
+                    <button onclick="scrollToSection('resultados')" class="nav-link">Resultados</button>
+                </nav>
+
+                <!-- Mobile menu button -->
+                <div class="mobile-menu-button">
+                    <button onclick="toggleMobileMenu()" class="menu-toggle">
+                        <span class="menu-icon" id="menu-icon">☰</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div class="mobile-nav" id="mobile-nav">
+                <div class="mobile-nav-content">
+                    <button onclick="scrollToSection('inicio')" class="mobile-nav-link">Início</button>
+                    <button onclick="scrollToSection('especialista')" class="mobile-nav-link">Nossa
+                        Especialista</button>
+                    <button onclick="scrollToSection('porque-spa')" class="mobile-nav-link">Por que Spa Capilar</button>
+                    <button onclick="scrollToSection('resultados')" class="mobile-nav-link">Resultados</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero-section">
+        <!-- Background Image -->
+        <div class="hero-background">
+            <img src="https://images.unsplash.com/photo-1730367019975-4ad8d9e14ef2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBzcGElMjBpbnRlcmlvciUyMHJlbGF4aW5nJTIwYXRtb3NwaGVyZXxlbnwxfHx8fDE3NTc1MzA5NDl8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                alt="Spa Capilar ambiente">
+            <div class="hero-overlay"></div>
+        </div>
+
+        <!-- Content -->
+        <div class="hero-content">
+            <h1 class="hero-title">Ninita Spa Capilar</h1>
+            <p class="hero-subtitle">Transforme seus cabelos com tratamentos especializados em afinamento capilar e
+                queda de cabelo</p>
+            <div class="hero-buttons">
+                <button onclick="scrollToSection('especialista')" class="btn-primary">
+                    Conheça Nossa Especialista
+                </button>
+                <button onclick="scrollToSection('resultados')" class="btn-secondary">
+                    Ver Resultados
+                </button>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+            <div class="scroll-indicator-container">
+                <div class="scroll-indicator-dot"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specialist Section -->
+    <section id="especialista" class="specialist-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Sobre Nossa Especialista</h2>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="specialist-content">
+                <!-- Image -->
+                <div class="specialist-image-container">
+                    <div class="specialist-image-wrapper">
+                        <img src="img/especialista_foto.png" alt="Ninita - Especialista em Spa Capilar"
+                            class="specialist-image">
+                        <div class="specialist-image-overlay"></div>
+                    </div>
+                    <!-- Decorative elements -->
+                    <div class="decorative-element-1"></div>
+                    <div class="decorative-element-2"></div>
+                </div>
+
+                <!-- Content -->
+                <div class="specialist-text">
+                    <div class="specialist-info">
+                        <h3>Ninita Silva</h3>
+                        <p class="specialist-intro">
+                            Com mais de 15 anos de experiência em tricologia e cuidados capilares especializados,
+                            Ninita é reconhecida como uma das principais especialistas em tratamentos para
+                            afinamento capilar e queda de cabelo no país.
+                        </p>
+                    </div>
+
+                    <div class="specialist-details">
+                        <p>
+                            Formada em Tricologia pela Universidade de São Paulo e especializada em terapias
+                            capilares avançadas, ela desenvolveu técnicas exclusivas que combinam tratamentos
+                            tradicionais com as mais modernas tecnologias do mercado.
+                        </p>
+
+                        <p>
+                            Sua paixão pelos cuidados capilares nasceu de uma experiência pessoal com problemas
+                            de queda de cabelo, o que a motivou a se dedicar inteiramente a ajudar outras pessoas
+                            a reconquistarem a confiança através de cabelos saudáveis e fortes.
+                        </p>
+
+                        <p>
+                            No Ninita Spa Capilar, cada tratamento é personalizado e desenvolvido especificamente
+                            para as necessidades individuais de cada cliente, garantindo resultados eficazes e
+                            duradouros.
+                        </p>
+                    </div>
+
+                    <div class="specialist-stats">
+                        <div class="stat">
+                            <div class="stat-number">15+</div>
+                            <div class="stat-label">Anos de Experiência</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">500+</div>
+                            <div class="stat-label">Clientes Transformadas</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Spa Section -->
+    <section id="porque-spa" class="why-spa-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Por que Procurar um Spa Capilar?</h2>
+                <div class="section-divider"></div>
+                <p class="section-description">
+                    Seus cabelos merecem cuidados especializados. Descubra como nossos tratamentos
+                    podem transformar a saúde e aparência dos seus fios.
+                </p>
+            </div>
+
+            <div class="why-spa-content">
+                <!-- Benefits Grid -->
+                <div class="benefits-grid">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">❤️</div>
+                        <h3>Cuidado Personalizado</h3>
+                        <p>Cada tratamento é desenvolvido especificamente para suas necessidades capilares únicas.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-icon">🛡️</div>
+                        <h3>Técnicas Comprovadas</h3>
+                        <p>Utilizamos métodos cientificamente comprovados e as mais modernas tecnologias do mercado.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-icon">⭐</div>
+                        <h3>Experiência Especializada</h3>
+                        <p>Mais de 15 anos de experiência em tricologia e tratamentos capilares avançados.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-icon">✨</div>
+                        <h3>Resultados Duradouros</h3>
+                        <p>Transformações reais que devolvem a confiança e a saúde dos seus cabelos.</p>
+                    </div>
+                </div>
+
+                <!-- Image -->
+                <div class="spa-image-container">
+                    <div class="spa-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1670346304550-01c91fbc15af?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzcGElMjBjYW5kbGVzJTIwcmVsYXhpbmclMjBhdG1vc3BoZXJlfGVufDF8fHx8MTc1NzQ1Njc0Nnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                            alt="Ambiente relaxante do spa" class="spa-image">
+                        <div class="spa-image-overlay"></div>
+                    </div>
+                    <!-- Decorative elements -->
+                    <div class="spa-decorative-1"></div>
+                    <div class="spa-decorative-2"></div>
+                </div>
+            </div>
+
+            <!-- Call to Action -->
+            <div class="cta-container">
+                <div class="cta-box">
+                    <h3>Pronta para Transformar Seus Cabelos?</h3>
+                    <p>Agende uma avaliação gratuita e descubra qual tratamento é ideal para você.</p>
+                    <button onclick="scrollToSection('resultados')" class="btn-primary">
+                        Ver Nossos Resultados
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Section -->
+    <section id="resultados" class="results-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Resultados dos Nossos Clientes</h2>
+                <div class="section-divider"></div>
+                <p class="section-description">
+                    Transformações reais que falam por si só. Veja como nossos tratamentos especializados
+                    podem revolucionar a saúde dos seus cabelos.
+                </p>
+            </div>
+
+            <!-- Category Tabs -->
+            <div class="category-tabs">
+                <button class="category-tab active featured" data-category="afinamento"
+                    onclick="setActiveCategory('afinamento')">
+                    Afinamento Capilar
+                    <span class="specialty-badge">Especialidade</span>
+                </button>
+                <button class="category-tab" data-category="queda" onclick="setActiveCategory('queda')">Queda
+                    Capilar</button>
+                <button class="category-tab" data-category="inflamacao"
+                    onclick="setActiveCategory('inflamacao')">Inflamação</button>
+                <button class="category-tab" data-category="transicao"
+                    onclick="setActiveCategory('transicao')">Transição Capilar</button>
+                <button class="category-tab" data-category="volume" onclick="setActiveCategory('volume')">Volume e
+                    Comprimento</button>
+                <button class="category-tab" data-category="pontas" onclick="setActiveCategory('pontas')">Recuperação de
+                    Pontas</button>
+                <button class="category-tab" data-category="descoloridos"
+                    onclick="setActiveCategory('descoloridos')">Cabelos Descoloridos</button>
+                <button class="category-tab" data-category="peso" onclick="setActiveCategory('peso')">Cabelos Sem Volume
+                    e Peso</button>
+            </div>
+
+            <!-- Active Category Content -->
+            <div class="category-content">
+                <!-- Before/After Images -->
+                <div class="before-after-images">
+                    <!-- Before Image -->
+                    <div class="before-image-container">
+                        <div class="image-wrapper">
+                            <img id="before-image"
+                                src="https://images.unsplash.com/photo-1705414104916-b5a1b05d8a47?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxoYWlyJTIwbG9zcyUyMHRyZWF0bWVudCUyMHJlc3VsdHN8ZW58MXx8fHwxNzU3NDU2NzQyfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                                alt="Antes do tratamento">
+                            <div class="image-overlay"></div>
+                            <div class="image-label before">ANTES</div>
+                        </div>
+                    </div>
+
+                    <!-- After Image -->
+                    <div class="after-image-container">
+                        <div class="image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1571037535055-4d89cc730a50?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxoYWlyJTIwdHJhbnNmb3JtYXRpb24lMjBhZnRlciUyMHRyZWF0bWVudCUyMHJlc3VsdHxlbnwxfHx8fDE3NTc1MzA5NTJ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                                alt="Depois do tratamento">
+                            <div class="image-overlay"></div>
+                            <div class="image-label after">DEPOIS</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Content -->
+                <div class="category-details">
+                    <div class="category-info">
+                        <h3 id="category-title">Afinamento Capilar</h3>
+                        <p id="category-subtitle" class="category-subtitle">Nossa Maior Especialidade</p>
+                        <p id="category-description">Tratamentos específicos para cabelos finos e com pouco volume,
+                            devolvendo densidade e força.</p>
+                    </div>
+
+                    <!-- Treatment Details -->
+                    <div class="treatment-details">
+                        <h4>Detalhes do Tratamento</h4>
+                        <div class="treatment-info">
+                            <div class="treatment-item">
+                                <span>Duração do tratamento:</span>
+                                <span>4-6 semanas</span>
+                            </div>
+                            <div class="treatment-item">
+                                <span>Sessões recomendadas:</span>
+                                <span>8-12 sessões</span>
+                            </div>
+                            <div class="treatment-item">
+                                <span>Resultados visíveis:</span>
+                                <span>2-3 semanas</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Client Testimonial -->
+                    <div class="testimonial">
+                        <p class="testimonial-text">
+                            "Incrível como meu cabelo mudou! Estava perdendo a esperança, mas os tratamentos
+                            da Ninita transformaram completamente meus fios. Agora tenho o cabelo que sempre sonhei!"
+                        </p>
+                        <p class="testimonial-author" id="testimonial-author">
+                            - Cliente Satisfeita, Afinamento Capilar
+                        </p>
+                    </div>
+
+                    <!-- CTA Button -->
+                    <div class="cta-button-container">
+                        <button class="btn-primary">Agendar Consulta Gratuita</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-content">
+                <!-- Brand -->
+                <div class="footer-brand">
+                    <h3>Ninita Spa Capilar</h3>
+                    <p>Especialistas em tratamentos capilares avançados, com foco em afinamento capilar e queda de
+                        cabelo.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">📷</a>
+                        <a href="#" class="social-link">📘</a>
+                    </div>
+                </div>
+
+                <!-- Contato -->
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <span class="contact-icon">📞</span>
+                            <span>(11) 9999-9999</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">✉️</span>
+                            <span>contato@ninitaspa.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📍</span>
+                            <span>Rua das Flores, 123<br>Jardim Europa, São Paulo - SP</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Horário -->
+                <div class="footer-section">
+                    <h4>Horário de Funcionamento</h4>
+                    <div class="schedule-info">
+                        <div class="schedule-item">
+                            <span class="schedule-icon">🕘</span>
+                            <div>
+                                <div>Segunda a Sexta: 9h às 19h</div>
+                                <div>Sábado: 9h às 17h</div>
+                                <div>Domingo: Fechado</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Serviços -->
+                <div class="footer-section">
+                    <h4>Principais Serviços</h4>
+                    <ul class="services-list">
+                        <li>• Tratamento para Afinamento</li>
+                        <li>• Controle de Queda Capilar</li>
+                        <li>• Transição Capilar</li>
+                        <li>• Recuperação de Pontas</li>
+                        <li>• Hidratação Profunda</li>
+                        <li>• Reconstrução Capilar</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom -->
+            <div class="footer-bottom">
+                <p>© 2024 Ninita Spa Capilar. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
